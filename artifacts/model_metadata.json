@@ -1,0 +1,65 @@
+{
+  "project": "CHURNIQ",
+  "model_type": "LogisticRegression",
+  "target": "Churn",
+  "positive_class": 1,
+  "positive_class_label": "Yes",
+  "decision_threshold": 0.3883478145063001,
+  "selected_hyperparameters": {
+    "model__C": 1.0,
+    "model__class_weight": null
+  },
+  "threshold_selection": {
+    "method": "Maximum F1 on validation subset",
+    "validation_f1": 0.6488188976372969,
+    "validation_precision": 0.6130952380952381,
+    "validation_recall": 0.6889632107023411
+  },
+  "test_metrics": {
+    "Accuracy": 0.7771469127040455,
+    "Balanced Accuracy": 0.7458523857500841,
+    "Precision": 0.5669642857142857,
+    "Recall": 0.679144385026738,
+    "F1": 0.6180048661800487,
+    "ROC-AUC": 0.8421349040274871,
+    "Average Precision": 0.6343385058492537,
+    "Brier Score": 0.13803115710524805
+  },
+  "random_seed": 42,
+  "training_rows": 5634,
+  "test_rows": 1409,
+  "numeric_features": [
+    "SeniorCitizen",
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "categorical_features": [
+    "gender",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod"
+  ],
+  "excluded_columns": [
+    "customerID",
+    "Churn"
+  ],
+  "created_at_utc": "2026-10-30T16:47:26.664961+00:00",
+  "limitations": [
+    "Evaluation uses the IBM Telco Customer Churn dataset.",
+    "Performance on new populations is not established.",
+    "The selected threshold optimizes validation F1, not measured business profit.",
+    "Predicted churn probabilities are estimates, not guarantees."
+  ]
+}
