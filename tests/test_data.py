@@ -54,10 +54,10 @@ def test_dataset_loader_rejects_missing_total_charges_for_active_customer(
     path = tmp_path / "invalid_charges.csv"
 
     pd.DataFrame({
-        "customerID": ["A"],
-        "Churn": ["No"],
-        "tenure": [12],
-        "TotalCharges": [" "],
+        "customerID": ["A", "B"],
+        "Churn": ["No", "Yes"],
+        "tenure": [12, 1],
+        "TotalCharges": [" ", "1"],
     }).to_csv(path, index=False)
 
     with pytest.raises(ValueError, match="nonzero tenure"):
