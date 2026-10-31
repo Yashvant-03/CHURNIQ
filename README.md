@@ -21,7 +21,7 @@ the IBM Telco Customer Churn dataset.
 Selected decision threshold: 0.3883.
 
 These are the results reported by the Colab notebook.
-Independent reproduction has not yet been established.
+The repository training pipeline was independently rerun in Colab. All eight reported test metrics reproduced exactly.
 
 ## Confusion matrix
 
@@ -72,11 +72,11 @@ python -m churniq.train --data data/WA_Fn-UseC_-Telco-Customer-Churn.csv --outpu
 - Model coefficients indicate associations, not causal effects.
 - Calibration is not guaranteed.
 - Verify dataset licensing before redistribution.
-- No live deployment is claimed.
+- Live demo: https://churniq-ml.streamlit.app/
 - Never commit credentials, secrets, or private customer data.
 
 ## Development status
 
 The notebook produced a model, evaluation results, and metadata.
 Automated package tests passed in the current Colab runtime.
-Local Windows execution and independent retraining remain to be verified.
+Independent retraining was verified in Colab. Local Windows execution has not yet been verified.
