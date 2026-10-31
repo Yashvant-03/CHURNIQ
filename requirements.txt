@@ -1,3 +1,4 @@
 -e .[dev,demo]
+joblib==1.6.0
 matplotlib==3.10.0
 seaborn==0.13.2
