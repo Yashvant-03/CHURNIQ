@@ -1,4 +1,7 @@
--e .[dev,demo]
+streamlit
+numpy==2.1.3
+pandas==2.2.3
+scikit-learn==1.6.1
 joblib==1.6.0
 matplotlib==3.10.0
 seaborn==0.13.2
